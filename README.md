@@ -5,7 +5,7 @@ This is a simple design tool. It's easy to understand this. It's for embedding a
 
 lex & yaccの構文ルール記述は簡潔で分かり易い。そのルール記述をアプリ作成に導入したい。<br>
 lex & yaccは汎用向けで作成されたため内部構造が複雑で分かり辛い。<br>
-lex & yaccの特徴にソースの動的生成がある。製品アプリに実装できない。<br>
+lex & yaccの特徴にソースの動的生成があり、処理を複雑化させている。<br>
 <br>
 内部構造を単純化してホワイトボックスとして運用できるようにする。<br>
 ただし、単純化のための制限が実用レベルを落とさないように努める。<br>

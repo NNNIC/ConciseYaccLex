@@ -1,5 +1,5 @@
 # ConciseYaccLex
-It's a simple design and it's easy to understand. It's for embedding simple a lexical analyzer; a subset of 'Lex &amp; Yacc' to your application.
+It's a simple design and it's easy to understand it. It's for embedding a simple lexical analyzer; a subset of 'Lex &amp; Yacc' to your application.
 
 ## 動機と目的
 

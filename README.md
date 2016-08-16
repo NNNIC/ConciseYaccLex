@@ -167,17 +167,17 @@ public object[] sx_hoge = new object[]{
 
 ### ３．構文解釈について
 
-    
+スクリプトの冒頭から構文ルールを総当たりで解析。一方向のみ単純な解析のみ。<br>    
 
-	構文ルールに合致すると指定の生成API(YCODE.DO_NEWまたはYCODE.DO_ADD)を実行。<br>
+構文ルールに合致すると指定の生成API(YCODE.DO_NEWまたはYCODE.DO_ADD)を実行。<br>
 	
-	詳細は y/yanalizer.csを参照。<br>
+詳細は y/yanalizer.csを参照。<br>
 <br>
 <br>
 ### ４．VALUEについて
-	<br>
-	VALUEは解析結果の１要素。<br>
-　　<br>
+<br>
+VALUEは解析結果の１要素。<br>
+<br>
 　　<pre>
     public class VALUE
     {
@@ -190,9 +190,9 @@ public object[] sx_hoge = new object[]{
 		  :
 		  :
     }
+	    ※解析結果は、VALUEの集合体となります。
     </pre>
 
-	解析結果は、VALUEの集合体となります。
 <br>
 <br>
 ５．ルール変数で非終端記号の値（type）や名前を取得する<br>

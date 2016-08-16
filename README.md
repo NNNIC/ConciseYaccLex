@@ -178,7 +178,7 @@ public object[] sx_hoge = new object[]{
 <br>
 VALUEは解析結果の１要素。<br>
 <br>
-　　<pre>
+<pre>
     public class VALUE
     {
         public double n;	//終末記号時に数値を格納
@@ -191,7 +191,7 @@ VALUEは解析結果の１要素。<br>
 		  :
     }
 	    ※解析結果は、VALUEの集合体となります。
-    </pre>
+</pre>
 
 <br>
 <br>

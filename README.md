@@ -111,7 +111,7 @@ Exec Display Sentence
 
 ## 補足
 
-1. スクリプトについて
+### 1. スクリプトについて
 <br>
 データスクリプトを想定。<br>
 行単位での解釈を行う。<br>
@@ -136,7 +136,7 @@ Display --- 表示物指定           Format: DISPLAY "表示物名" 座標
 注：サンプルのための仕様が曖昧なことに留意ください。
 
 
-２．構文ルールについて
+### ２．構文ルールについて
 <br>
 y/syntax/ydef.csの構文ルールは以下の通りです。
 <br>
@@ -144,18 +144,18 @@ y/syntax/ydef.csの構文ルールは以下の通りです。
 public object[] sx_hoge = new object[]{ 
 
                                  "sx_hoge",   <--- 格納するルールデータと同じものを指定。
-								 NNNN,        <--- 優先順位を指定します。1000以上。数値が大きい方が優先度が高。
-								 "HOGE", "(", QSTR ,")"    <--- ルールを指定。(*1)
-								 __MAKE__,                 <--- 作成ＡＰＩが次に来ることを示すマーク。
-								 YCODE.DO_NEW,             <--- ＡＰＩ指定  YCODE.DO_NEW か YCODE.DO_ADDを指定
+								 NNNN,        --- 優先順位を指定します。1000以上。数値が大きい方が優先度が高。
+								 "HOGE", "(", QSTR ,")"    --- ルールを指定。(*1)
+								 __MAKE__,                 --- 作成ＡＰＩが次に来ることを示すマーク。
+								 YCODE.DO_NEW,             --- ＡＰＩ指定  YCODE.DO_NEW か YCODE.DO_ADDを指定
 								                                YCODE.DO_NEW --- 新規のVALUEを作成。引数データをリスト化。
 																YCODE.DO_ADD --- 既存のVALUEに引数データを追加。
-								 0,2,                      <--- ＡＰＩの引数を指定します。(*1)での実際値を引数化。
+								 0,2,                      --- ＡＰＩの引数を指定します。(*1)での実際値を引数化。
 								                                例の場合、"HOGE"と"QSTR"が入る
 
-							     __OR__,                   <--- 別ルールが次に来ることを示すマーク
+							     __OR__,                   --- 別ルールが次に来ることを示すマーク
 
-								 "HOGE", "(", QSTR, "," , QSTR, ")" <--- ルール２
+								 "HOGE", "(", QSTR, "," , QSTR, ")" --- ルール２
 								 __MAKE__,
 								 YCODE.DO_NEW,
 								 0,2,4
@@ -165,7 +165,7 @@ public object[] sx_hoge = new object[]{
 </pre>
 <br>
 
-３．構文解釈について<br>
+### ３．構文解釈について
 
     スクリプトの冒頭から構文ルールを総当たりで解析。一方向のみ単純な解析のみ。<br>
 
@@ -174,7 +174,7 @@ public object[] sx_hoge = new object[]{
 	詳細は y/yanalizer.csを参照。<br>
 <br>
 <br>
-４．VALUEについて<br>
+### ４．VALUEについて
 	<br>
 	VALUEは解析結果の１要素。<br>
 　　<br>

@@ -179,7 +179,7 @@ Display --- 表示物指定           Format: DISPLAY "表示物名" 座標
 public object[] sx_hoge = new object[]{ 
 
                                  "sx_hoge",   --- 格納するルールデータと同じものを指定。
-								 NNNN,        --- 優先順位を指定します。1000以上。数値が大きい方が優先度が高。
+								 NNNN,        --- 優先順位を指定します。1000以上。数値が大きい方が優先度(結合度)が高。
 								 "HOGE", "(", QSTR ,")"    --- ルールを指定。(*1)
 								 __MAKE__,                 --- 作成ＡＰＩが次に来ることを示すマーク。
 								 YCODE.DO_NEW,             --- ＡＰＩ指定  YCODE.DO_NEW か YCODE.DO_ADDを指定

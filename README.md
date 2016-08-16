@@ -1,7 +1,7 @@
 # ConciseYaccLex
 It's a simple design and it's easy to understand. It's for implementing lexical analyzer to your application.
 
-■動機と目的
+## 動機と目的
 
 lex & yaccの構文ルール記述は簡潔で分かり易い。そのルール記述をアプリ作成に導入したい。
 lex & yaccは汎用向けで作成されたため内部構造が複雑で分かり辛い。
@@ -13,7 +13,7 @@ lex & yaccの特徴にソースの動的生成がある。市販アプリでの�
 他環境への移植も考慮する。
 
 
-■概要
+## 概要
 
 終末記号分解部分 (lex)は、.lexに当たるものはなく、ソースコードによる直実装。 y/lex.cs にて行う。
 構文ルールは、y/syntax/ydef.csに定義。
@@ -21,7 +21,7 @@ lex & yaccの特徴にソースの動的生成がある。市販アプリでの�
 解釈後の実行用クラスは runtimeフォルダに集約。
 エラーとログ出力はsys.csに集約。
 
-■ソース
+## ソース
 
 Program.cs       -- 第一引数のスクリプトファイルを解釈実行
 sys.cs           -- エラー、ログ出力提供（移植用）
@@ -39,12 +39,12 @@ runtime/funcitl.cs         -- 関数実行時の汎用関数提供
 
 data/*.txt       -- テストファイル
 
-■実行確認
+## 実行確認
 
 例） data/test05.txtを第一引数にして実行。
 
 以下、実行結果
-
+<pre>
 *lex_output
 [STR>`SCREEN`][QSTR>`"hoge"`][EOL>]
 [STR>`LAYER`][QSTR>`"main"`][STR>`MC`][EOL>]
@@ -98,12 +98,14 @@ Exec Layer Sentence
 Exec Display Sentence
 Exec Display Sentence
 
-■ライセンス
+</pre>
+
+## ライセンス
 
 商用も含め、自由にお使いください。
 
 
-■補足
+## 補足
 
 1. スクリプトについて
 

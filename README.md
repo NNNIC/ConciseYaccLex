@@ -50,49 +50,49 @@ data/*.txt       -- テストファイル
 <br>
 <pre>
 *lex_output
-[STR>`SCREEN`][QSTR>`"hoge"`][EOL>]
-[STR>`LAYER`][QSTR>`"main"`][STR>`MC`][EOL>]
-[PRE>`#IF`][STR>`DATE`][SYM>`(`][QSTR>`"2016/8/13"`][SYM>`)`][EOL>]
-[PRE>`#SET`][VAR>`@A`][QSTR>`"AAA"`][EOL>]
-[PRE>`#ELIF`][STR>`DATE`][SYM>`(`][QSTR>`"2016/8/14"`][SYM>`)`][EOL>]
-[PRE>`#SET`][VAR>`@A`][QSTR>`"BBB"`][EOL>]
-[PRE>`#ELIF`][STR>`DATEBETWEEN`][SYM>`(`][QSTR>`"2016/8/15"`][SYM>`,`][QSTR>`"2016/8/16"`][SYM>`)`][EOL>]
-[PRE>`#SET`][VAR>`@A`][QSTR>`"CCC"`][EOL>]
-[PRE>`#ELIF`][STR>`DATEAFTER`][SYM>`(`][QSTR>`"2016/8/17"`][SYM>`)`][EOL>]
-[PRE>`#SET`][VAR>`@A`][QSTR>`"DDD"`][EOL>]
-[PRE>`#ENDIF`][EOL>]
-[STR>`DISPLAY`][VAR>`@A`][SYM>`(`][NUM>`0`][SYM>`,`][NUM>`0`][SYM>`)`][SYM>`{`][STR>`DELAY_ON`][SYM>`(`][NUM>`5`][SYM>`)`][SYM>`;`][SYM>`}`][EOL>]
-[STR>`DISPLAY`][QSTR>`"EFFECT_1"`][SYM>`(`][QSTR>`"OKBUTTON"`][SYM>`,`][NUM>`0`][SYM>`,`][NUM>`0`][SYM>`)`][SYM>`{`][STR>`HIDE`][SYM>`(`][SYM>`)`][SYM>`;`][STR>`ON_BUTTON`][SYM>`(`][SYM>`)`][SYM>`;`][SYM>`}`][EOL>]
+[STR&gt;`SCREEN`][QSTR&gt;`"hoge"`][EOL&gt;]
+[STR&gt;`LAYER`][QSTR&gt;`"main"`][STR&gt;`MC`][EOL&gt;]
+[PRE&gt;`#IF`][STR&gt;`DATE`][SYM&gt;`(`][QSTR&gt;`"2016/8/13"`][SYM&gt;`)`][EOL&gt;]
+[PRE&gt;`#SET`][VAR&gt;`@A`][QSTR&gt;`"AAA"`][EOL&gt;]
+[PRE&gt;`#ELIF`][STR&gt;`DATE`][SYM&gt;`(`][QSTR&gt;`"2016/8/14"`][SYM&gt;`)`][EOL&gt;]
+[PRE&gt;`#SET`][VAR&gt;`@A`][QSTR&gt;`"BBB"`][EOL&gt;]
+[PRE&gt;`#ELIF`][STR&gt;`DATEBETWEEN`][SYM&gt;`(`][QSTR&gt;`"2016/8/15"`][SYM&gt;`,`][QSTR&gt;`"2016/8/16"`][SYM&gt;`)`][EOL&gt;]
+[PRE&gt;`#SET`][VAR&gt;`@A`][QSTR&gt;`"CCC"`][EOL&gt;]
+[PRE&gt;`#ELIF`][STR&gt;`DATEAFTER`][SYM&gt;`(`][QSTR&gt;`"2016/8/17"`][SYM&gt;`)`][EOL&gt;]
+[PRE&gt;`#SET`][VAR&gt;`@A`][QSTR&gt;`"DDD"`][EOL&gt;]
+[PRE&gt;`#ENDIF`][EOL&gt;]
+[STR&gt;`DISPLAY`][VAR&gt;`@A`][SYM&gt;`(`][NUM&gt;`0`][SYM&gt;`,`][NUM&gt;`0`][SYM&gt;`)`][SYM&gt;`{`][STR&gt;`DELAY_ON`][SYM&gt;`(`][NUM&gt;`5`][SYM&gt;`)`][SYM&gt;`;`][SYM&gt;`}`][EOL&gt;]
+[STR&gt;`DISPLAY`][QSTR&gt;`"EFFECT_1"`][SYM&gt;`(`][QSTR&gt;`"OKBUTTON"`][SYM&gt;`,`][NUM&gt;`0`][SYM&gt;`,`][NUM&gt;`0`][SYM&gt;`)`][SYM&gt;`{`][STR&gt;`HIDE`][SYM&gt;`(`][SYM&gt;`)`][SYM&gt;`;`][STR&gt;`ON_BUTTON`][SYM&gt;`(`][SYM&gt;`)`][SYM&gt;`;`][SYM&gt;`}`][EOL&gt;]
 
 
 *first_interpreted
-[sx_sentence>0[sx_screen_sentence>0[STR>`SCREEN`]1[sx_param>0[QSTR>`"hoge"`]]]]
-[sx_sentence>0[sx_layer_sentence>0[STR>`LAYER`]1[sx_param>0[QSTR>`"main"`]]2[STR>`MC`]]]
-[sx_prepro_setence>0[sx_pif_sentence>0[PRE>`#IF`]1[sx_function>0[STR>`DATE`]1[sx_param>0[QSTR>`"2016/8/13"`]]]]]
-[sx_prepro_setence>0[sx_pset_sentence>0[PRE>`#SET`]1[VAR>`@A`]2[REST>0[sx_param>0[QSTR>`"AAA"`]]]]]
-[sx_prepro_setence>0[sx_pelif_sentence>0[PRE>`#ELIF`]1[sx_function>0[STR>`DATE`]1[sx_param>0[QSTR>`"2016/8/14"`]]]]]
-[sx_prepro_setence>0[sx_pset_sentence>0[PRE>`#SET`]1[VAR>`@A`]2[REST>0[sx_param>0[QSTR>`"BBB"`]]]]]
-[sx_prepro_setence>0[sx_pelif_sentence>0[PRE>`#ELIF`]1[sx_function>0[STR>`DATEBETWEEN`]1[sx_param_list>0[sx_param>0[QSTR>`"2016/8/15"`]]1[sx_param>0[QSTR>`"2016/8/16"`]]]]]]
-[sx_prepro_setence>0[sx_pset_sentence>0[PRE>`#SET`]1[VAR>`@A`]2[REST>0[sx_param>0[QSTR>`"CCC"`]]]]]
-[sx_prepro_setence>0[sx_pelif_sentence>0[PRE>`#ELIF`]1[sx_function>0[STR>`DATEAFTER`]1[sx_param>0[QSTR>`"2016/8/17"`]]]]]
-[sx_prepro_setence>0[sx_pset_sentence>0[PRE>`#SET`]1[VAR>`@A`]2[REST>0[sx_param>0[QSTR>`"DDD"`]]]]]
-[sx_prepro_setence>0[sx_pendif_sentence>0[PRE>`#ENDIF`]]]
-[STR>`DISPLAY`][VAR>`@A`][sx_pos>0[NUM>`0`]1[NUM>`0`]][sx_option_phrase>0[sx_function>0[STR>`DELAY_ON`]1[sx_param>0[NUM>`5`]]]][EOL>]
-[sx_sentence>0[sx_display_sentence>0[STR>`DISPLAY`]1[sx_param>0[QSTR>`"EFFECT_1"`]]2[sx_pos>0[QSTR>`"OKBUTTON"`]1[NUM>`0`]2[NUM>`0`]]3[sx_option_phrase>0[sx_function_list>0[sx_function>0[STR>`HIDE`]]1[sx_function>0[STR>`ON_BUTTON`]]]]]]
+[sx_sentence&gt;0[sx_screen_sentence&gt;0[STR&gt;`SCREEN`]1[sx_param&gt;0[QSTR&gt;`"hoge"`]]]]
+[sx_sentence&gt;0[sx_layer_sentence&gt;0[STR&gt;`LAYER`]1[sx_param&gt;0[QSTR&gt;`"main"`]]2[STR&gt;`MC`]]]
+[sx_prepro_setence&gt;0[sx_pif_sentence&gt;0[PRE&gt;`#IF`]1[sx_function&gt;0[STR&gt;`DATE`]1[sx_param&gt;0[QSTR&gt;`"2016/8/13"`]]]]]
+[sx_prepro_setence&gt;0[sx_pset_sentence&gt;0[PRE&gt;`#SET`]1[VAR&gt;`@A`]2[REST&gt;0[sx_param&gt;0[QSTR&gt;`"AAA"`]]]]]
+[sx_prepro_setence&gt;0[sx_pelif_sentence&gt;0[PRE&gt;`#ELIF`]1[sx_function&gt;0[STR&gt;`DATE`]1[sx_param&gt;0[QSTR&gt;`"2016/8/14"`]]]]]
+[sx_prepro_setence&gt;0[sx_pset_sentence&gt;0[PRE&gt;`#SET`]1[VAR&gt;`@A`]2[REST&gt;0[sx_param&gt;0[QSTR&gt;`"BBB"`]]]]]
+[sx_prepro_setence&gt;0[sx_pelif_sentence&gt;0[PRE&gt;`#ELIF`]1[sx_function&gt;0[STR&gt;`DATEBETWEEN`]1[sx_param_list&gt;0[sx_param&gt;0[QSTR&gt;`"2016/8/15"`]]1[sx_param&gt;0[QSTR&gt;`"2016/8/16"`]]]]]]
+[sx_prepro_setence&gt;0[sx_pset_sentence&gt;0[PRE&gt;`#SET`]1[VAR&gt;`@A`]2[REST&gt;0[sx_param&gt;0[QSTR&gt;`"CCC"`]]]]]
+[sx_prepro_setence&gt;0[sx_pelif_sentence&gt;0[PRE&gt;`#ELIF`]1[sx_function&gt;0[STR&gt;`DATEAFTER`]1[sx_param&gt;0[QSTR&gt;`"2016/8/17"`]]]]]
+[sx_prepro_setence&gt;0[sx_pset_sentence&gt;0[PRE&gt;`#SET`]1[VAR&gt;`@A`]2[REST&gt;0[sx_param&gt;0[QSTR&gt;`"DDD"`]]]]]
+[sx_prepro_setence&gt;0[sx_pendif_sentence&gt;0[PRE&gt;`#ENDIF`]]]
+[STR&gt;`DISPLAY`][VAR&gt;`@A`][sx_pos&gt;0[NUM&gt;`0`]1[NUM&gt;`0`]][sx_option_phrase&gt;0[sx_function&gt;0[STR&gt;`DELAY_ON`]1[sx_param&gt;0[NUM&gt;`5`]]]][EOL&gt;]
+[sx_sentence&gt;0[sx_display_sentence&gt;0[STR&gt;`DISPLAY`]1[sx_param&gt;0[QSTR&gt;`"EFFECT_1"`]]2[sx_pos&gt;0[QSTR&gt;`"OKBUTTON"`]1[NUM&gt;`0`]2[NUM&gt;`0`]]3[sx_option_phrase&gt;0[sx_function_list&gt;0[sx_function&gt;0[STR&gt;`HIDE`]]1[sx_function&gt;0[STR&gt;`ON_BUTTON`]]]]]]
 
 skip
 
 *preprocessed
-[sx_sentence>0[sx_screen_sentence>0[STR>`SCREEN`]1[sx_param>0[QSTR>`"hoge"`]]]]
-[sx_sentence>0[sx_layer_sentence>0[STR>`LAYER`]1[sx_param>0[QSTR>`"main"`]]2[STR>`MC`]]]
-[STR>`DISPLAY`][sx_param>0[QSTR>`"CCC"`]][sx_pos>0[NUM>`0`]1[NUM>`0`]][sx_option_phrase>0[sx_function>0[STR>`DELAY_ON`]1[sx_param>0[NUM>`5`]]]][EOL>]
-[sx_sentence>0[sx_display_sentence>0[STR>`DISPLAY`]1[sx_param>0[QSTR>`"EFFECT_1"`]]2[sx_pos>0[QSTR>`"OKBUTTON"`]1[NUM>`0`]2[NUM>`0`]]3[sx_option_phrase>0[sx_function_list>0[sx_function>0[STR>`HIDE`]]1[sx_function>0[STR>`ON_BUTTON`]]]]]]
+[sx_sentence&gt;0[sx_screen_sentence&gt;0[STR&gt;`SCREEN`]1[sx_param&gt;0[QSTR&gt;`"hoge"`]]]]
+[sx_sentence&gt;0[sx_layer_sentence&gt;0[STR&gt;`LAYER`]1[sx_param&gt;0[QSTR&gt;`"main"`]]2[STR&gt;`MC`]]]
+[STR&gt;`DISPLAY`][sx_param&gt;0[QSTR&gt;`"CCC"`]][sx_pos&gt;0[NUM&gt;`0`]1[NUM&gt;`0`]][sx_option_phrase&gt;0[sx_function&gt;0[STR&gt;`DELAY_ON`]1[sx_param&gt;0[NUM&gt;`5`]]]][EOL&gt;]
+[sx_sentence&gt;0[sx_display_sentence&gt;0[STR&gt;`DISPLAY`]1[sx_param&gt;0[QSTR&gt;`"EFFECT_1"`]]2[sx_pos&gt;0[QSTR&gt;`"OKBUTTON"`]1[NUM&gt;`0`]2[NUM&gt;`0`]]3[sx_option_phrase&gt;0[sx_function_list&gt;0[sx_function&gt;0[STR&gt;`HIDE`]]1[sx_function&gt;0[STR&gt;`ON_BUTTON`]]]]]]
 
 *executable_value_list
-[sx_sentence>0[sx_screen_sentence>0[STR>`SCREEN`]1[sx_param>0[QSTR>`"hoge"`]]]]
-[sx_sentence>0[sx_layer_sentence>0[STR>`LAYER`]1[sx_param>0[QSTR>`"main"`]]2[STR>`MC`]]]
-[sx_sentence>0[sx_display_sentence>0[STR>`DISPLAY`]1[sx_param>0[QSTR>`"CCC"`]]2[sx_pos>0[NUM>`0`]1[NUM>`0`]]3[sx_option_phrase>0[sx_function>0[STR>`DELAY_ON`]1[sx_param>0[NUM>`5`]]]]]]
-[sx_sentence>0[sx_display_sentence>0[STR>`DISPLAY`]1[sx_param>0[QSTR>`"EFFECT_1"`]]2[sx_pos>0[QSTR>`"OKBUTTON"`]1[NUM>`0`]2[NUM>`0`]]3[sx_option_phrase>0[sx_function_list>0[sx_function>0[STR>`HIDE`]]1[sx_function>0[STR>`ON_BUTTON`]]]]]]
+[sx_sentence&gt;0[sx_screen_sentence&gt;0[STR&gt;`SCREEN`]1[sx_param&gt;0[QSTR&gt;`"hoge"`]]]]
+[sx_sentence&gt;0[sx_layer_sentence&gt;0[STR&gt;`LAYER`]1[sx_param&gt;0[QSTR&gt;`"main"`]]2[STR&gt;`MC`]]]
+[sx_sentence&gt;0[sx_display_sentence&gt;0[STR&gt;`DISPLAY`]1[sx_param&gt;0[QSTR&gt;`"CCC"`]]2[sx_pos&gt;0[NUM&gt;`0`]1[NUM&gt;`0`]]3[sx_option_phrase&gt;0[sx_function&gt;0[STR&gt;`DELAY_ON`]1[sx_param&gt;0[NUM&gt;`5`]]]]]]
+[sx_sentence&gt;0[sx_display_sentence&gt;0[STR&gt;`DISPLAY`]1[sx_param&gt;0[QSTR&gt;`"EFFECT_1"`]]2[sx_pos&gt;0[QSTR&gt;`"OKBUTTON"`]1[NUM&gt;`0`]2[NUM&gt;`0`]]3[sx_option_phrase&gt;0[sx_function_list&gt;0[sx_function&gt;0[STR&gt;`HIDE`]]1[sx_function&gt;0[STR&gt;`ON_BUTTON`]]]]]]
 
 
 *Execute!

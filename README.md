@@ -82,7 +82,7 @@ display "EFFECT_1" ("OKBUTTON",0,0) { HIDE();  On_button(); }
 以下、実行結果<br>
 <br>
 <pre>
-*lex_output
+*lex_output　※ソースをlexで字句分解の結果 [xx]で一要素を示す。
 [STR&gt;`SCREEN`][QSTR&gt;`"hoge"`][EOL&gt;]
 [STR&gt;`LAYER`][QSTR&gt;`"main"`][STR&gt;`MC`][EOL&gt;]
 [PRE&gt;`#IF`][STR&gt;`DATE`][SYM&gt;`(`][QSTR&gt;`"2016/8/13"`][SYM&gt;`)`][EOL&gt;]
@@ -98,7 +98,7 @@ display "EFFECT_1" ("OKBUTTON",0,0) { HIDE();  On_button(); }
 [STR&gt;`DISPLAY`][QSTR&gt;`"EFFECT_1"`][SYM&gt;`(`][QSTR&gt;`"OKBUTTON"`][SYM&gt;`,`][NUM&gt;`0`][SYM&gt;`,`][NUM&gt;`0`][SYM&gt;`)`][SYM&gt;`{`][STR&gt;`HIDE`][SYM&gt;`(`][SYM&gt;`)`][SYM&gt;`;`][STR&gt;`ON_BUTTON`][SYM&gt;`(`][SYM&gt;`)`][SYM&gt;`;`][SYM&gt;`}`][EOL&gt;]
 
 
-*first_interpreted
+*first_interpreted ※第一回構文解析  ほとんどがsx_sentenceに集約。ただし、@AがあるDISPLAYのみ集約されていない。
 [sx_sentence&gt;0[sx_screen_sentence&gt;0[STR&gt;`SCREEN`]1[sx_param&gt;0[QSTR&gt;`"hoge"`]]]]
 [sx_sentence&gt;0[sx_layer_sentence&gt;0[STR&gt;`LAYER`]1[sx_param&gt;0[QSTR&gt;`"main"`]]2[STR&gt;`MC`]]]
 [sx_prepro_setence&gt;0[sx_pif_sentence&gt;0[PRE&gt;`#IF`]1[sx_function&gt;0[STR&gt;`DATE`]1[sx_param&gt;0[QSTR&gt;`"2016/8/13"`]]]]]
@@ -115,20 +115,20 @@ display "EFFECT_1" ("OKBUTTON",0,0) { HIDE();  On_button(); }
 
 skip
 
-*preprocessed
+*preprocessed　　※プリプロセス実行結果 @Aが変更されている。
 [sx_sentence&gt;0[sx_screen_sentence&gt;0[STR&gt;`SCREEN`]1[sx_param&gt;0[QSTR&gt;`"hoge"`]]]]
 [sx_sentence&gt;0[sx_layer_sentence&gt;0[STR&gt;`LAYER`]1[sx_param&gt;0[QSTR&gt;`"main"`]]2[STR&gt;`MC`]]]
 [STR&gt;`DISPLAY`][sx_param&gt;0[QSTR&gt;`"CCC"`]][sx_pos&gt;0[NUM&gt;`0`]1[NUM&gt;`0`]][sx_option_phrase&gt;0[sx_function&gt;0[STR&gt;`DELAY_ON`]1[sx_param&gt;0[NUM&gt;`5`]]]][EOL&gt;]
 [sx_sentence&gt;0[sx_display_sentence&gt;0[STR&gt;`DISPLAY`]1[sx_param&gt;0[QSTR&gt;`"EFFECT_1"`]]2[sx_pos&gt;0[QSTR&gt;`"OKBUTTON"`]1[NUM&gt;`0`]2[NUM&gt;`0`]]3[sx_option_phrase&gt;0[sx_function_list&gt;0[sx_function&gt;0[STR&gt;`HIDE`]]1[sx_function&gt;0[STR&gt;`ON_BUTTON`]]]]]]
 
-*executable_value_list
+*executable_value_list　※第２回解析結果。すべての行がsx_sentenceに集約。
 [sx_sentence&gt;0[sx_screen_sentence&gt;0[STR&gt;`SCREEN`]1[sx_param&gt;0[QSTR&gt;`"hoge"`]]]]
 [sx_sentence&gt;0[sx_layer_sentence&gt;0[STR&gt;`LAYER`]1[sx_param&gt;0[QSTR&gt;`"main"`]]2[STR&gt;`MC`]]]
 [sx_sentence&gt;0[sx_display_sentence&gt;0[STR&gt;`DISPLAY`]1[sx_param&gt;0[QSTR&gt;`"CCC"`]]2[sx_pos&gt;0[NUM&gt;`0`]1[NUM&gt;`0`]]3[sx_option_phrase&gt;0[sx_function&gt;0[STR&gt;`DELAY_ON`]1[sx_param&gt;0[NUM&gt;`5`]]]]]]
 [sx_sentence&gt;0[sx_display_sentence&gt;0[STR&gt;`DISPLAY`]1[sx_param&gt;0[QSTR&gt;`"EFFECT_1"`]]2[sx_pos&gt;0[QSTR&gt;`"OKBUTTON"`]1[NUM&gt;`0`]2[NUM&gt;`0`]]3[sx_option_phrase&gt;0[sx_function_list&gt;0[sx_function&gt;0[STR&gt;`HIDE`]]1[sx_function&gt;0[STR&gt;`ON_BUTTON`]]]]]]
 
 
-*Execute!
+*Execute!　※スクリプト実行
 
 Exec Screen Sentence
 Exec Layer Sentence

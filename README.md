@@ -17,7 +17,7 @@ lex & yaccの特徴にソースの動的生成がある。製品アプリに実�
 <br>
 終末記号分解部分 (lex)は、.lexに当たるものはなく、ソースコードによる直実装。 y/lex.cs にて行う。<br>
 構文ルールは、y/syntax/ydef.csに定義。<br>
-解釈の流れはProgram.csを参照すうこと。<br>
+解釈の流れはProgram.csを参照。<br>
 解釈後の実行用クラスは runtimeフォルダに集約。<br>
 エラーとログ出力はsys.csに集約。<br>
 <br>

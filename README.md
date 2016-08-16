@@ -199,11 +199,11 @@ public object[] sx_hoge = new object[]{
 <br>
 
 ### ３．構文解釈について
-
-スクリプトの冒頭から構文ルールを総当たりで解析。一方向のみ単純な解析のみ。<br>    
-
+<br>
+スクリプトの冒頭から構文ルールを総当たりで解析。一方向のみの単純な解析のみ。<br>    
+<br>
 構文ルールに合致すると指定の生成API(YCODE.DO_NEWまたはYCODE.DO_ADD)を実行。<br>
-	
+<br>	
 詳細は [y/yanalizer.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/y/yanalyzer.cs)を参照。<br>
 <br>
 <br>

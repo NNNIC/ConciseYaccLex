@@ -45,6 +45,39 @@ data/*.txt       -- テストファイル
 ## 実行確認
 
 例） data/test05.txtを第一引数にして実行。<br>
+
+<pre>
+//
+// TEST 05
+//
+
+Screen "hoge" 
+Layer  "main" MC 
+
+#if DATE("2016/8/13") 
+
+    #set @A "AAA" 
+
+#elif DATE("2016/8/14") 
+
+    #set @A "BBB" 
+
+#elif DATEBETWEEN("2016/8/15","2016/8/16")
+
+    #set @A "CCC" 
+
+#elif DATEAFTER("2016/8/17")  
+
+    #set @A "DDD" 
+
+#endif
+
+display @A     (0,0)                { DELAY_ON(5); }
+display "EFFECT_1" ("OKBUTTON",0,0) { HIDE();  On_button(); }
+
+
+</pre>
+
 <br>
 以下、実行結果<br>
 <br>

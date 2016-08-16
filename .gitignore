@@ -27,3 +27,10 @@
 *.exe
 *.out
 *.app
+
+#vs
+/lextool/lextool/bin/*
+/lextool/lextool/obj/*
+*.user
+*.BAK
+*.suo

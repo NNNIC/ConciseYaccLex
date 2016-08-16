@@ -17,9 +17,9 @@ lex & yaccの特徴にソースの動的生成がある。製品アプリに実�
 <br>
 終末記号分解部分 (lex)は、.lexに当たるものはなく、ソースコードによる直実装。 y/lex.cs にて行う。<br>
 構文ルールは、[y/syntax/ydef.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/y/syntax/ydef.cs)に定義。<br>
-解釈の流れはProgram.csを参照。<br>
+解釈の流れは[Program.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/Program.cs)を参照。<br>
 解釈後の実行用クラスは runtimeフォルダに集約。<br>
-エラーとログ出力はsys.csに集約。<br>
+エラーとログ出力は[sys.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/sys.cs)に集約。<br>
 <br>
 
 ## ソース
@@ -171,7 +171,7 @@ Display --- 表示物指定           Format: DISPLAY "表示物名" 座標
 
 ### ２．構文ルールについて
 <br>
-y/syntax/ydef.csの構文ルールは以下の通りです。
+[y/syntax/ydef.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/y/syntax/ydef.cs)の構文ルールは以下の通りです。
 <br>
 <pre>
 public object[] sx_hoge = new object[]{ 
@@ -204,7 +204,7 @@ public object[] sx_hoge = new object[]{
 
 構文ルールに合致すると指定の生成API(YCODE.DO_NEWまたはYCODE.DO_ADD)を実行。<br>
 	
-詳細は y/yanalizer.csを参照。<br>
+詳細は [y/yanalizer.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/y/yanalyzer.cs)を参照。<br>
 <br>
 <br>
 ### ４．VALUEについて
@@ -219,7 +219,7 @@ VALUEは解析結果の１要素。<br>
         public object o;	//終末記号時の要素（数値｜文字列）を格納
 
         public int type;	//終末記号・非終末記号のタイプを格納
-        public List<VALUE> list; //非終末記号時に子要素を格納　YCODE.DO_NEW|DO_ADD時に引数を格納。
+        public List&lt;VALUE&gt; list; //非終末記号時に子要素を格納　YCODE.DO_NEW|DO_ADD時に引数を格納。
 		  :
 		  :
     }

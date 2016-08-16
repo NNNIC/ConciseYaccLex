@@ -37,7 +37,7 @@ y/syntax/ydef.cs -- 構文ルール記述（.yファイル相当）
 
 runtime/preprocessfunc.cs  -- スクリプトのプリプロセス時の関数実行用
 runtime/mainprocessfunc.cs -- スクリプトのメインプロセス時の関数実行用
-runtime/funcitl.cs         -- 関数実行時の汎用関数提供
+runtime/funcutil.cs        -- 関数実行時の汎用関数提供
 
 data/*.txt       -- テストファイル
 </pre>

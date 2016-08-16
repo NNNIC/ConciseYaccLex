@@ -167,7 +167,7 @@ public object[] sx_hoge = new object[]{
 
 ### ３．構文解釈について
 
-    スクリプトの冒頭から構文ルールを総当たりで解析。一方向のみ単純な解析のみ。<br>
+    
 
 	構文ルールに合致すると指定の生成API(YCODE.DO_NEWまたはYCODE.DO_ADD)を実行。<br>
 	

@@ -5,7 +5,7 @@ It's a simple design and it's easy to understand. It's for implementing lexical 
 
 lex & yaccの構文ルール記述は簡潔で分かり易い。そのルール記述をアプリ作成に導入したい。<br>
 lex & yaccは汎用向けで作成されたため内部構造が複雑で分かり辛い。<br>
-lex & yaccの特徴にソースの動的生成がある。市販アプリでの実装はできない。<br>
+lex & yaccの特徴にソースの動的生成がある。製品アプリでの実装はできない。<br>
 <br>
 内部構造を単純化してホワイトボックスとして運用できるようにする。<br>
 ただし、単純化のための制限が実用レベルを落とさないように努める。<br>

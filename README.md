@@ -82,7 +82,7 @@ display "EFFECT_1" ("OKBUTTON",0,0) { HIDE();  On_button(); }
 以下、実行結果<br>
 <br>
 <pre>
-*lex_output　※ソースをlexで字句分解の結果 [xx]で一要素を示す。
+*lex_output　※ソースをlexで字句分解の結果 [xx]で一要素を示す。 要素内のリストはネストで表示。[xx:0[a]1[b]...]
 [STR&gt;`SCREEN`][QSTR&gt;`"hoge"`][EOL&gt;]
 [STR&gt;`LAYER`][QSTR&gt;`"main"`][STR&gt;`MC`][EOL&gt;]
 [PRE&gt;`#IF`][STR&gt;`DATE`][SYM&gt;`(`][QSTR&gt;`"2016/8/13"`][SYM&gt;`)`][EOL&gt;]

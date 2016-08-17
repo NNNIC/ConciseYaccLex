@@ -15,7 +15,7 @@ lex & yaccの特徴にソースの動的生成があり、処理を複雑化さ�
 
 ## 概要
 <br>
-終末記号分解部分 (lex)は、.lexに当たるものはなく、ソースコードによる直実装。 [y/lex.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/y/lex.cs) にて行う。<br>
+終端記号分解部分 (lex)は、.lexに当たるものはなく、ソースコードによる直実装。 [y/lex.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/y/lex.cs) にて行う。<br>
 構文ルールは、[y/syntax/ydef.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/y/syntax/ydef.cs)に定義。<br>
 解釈の流れは[Program.cs](https://github.com/NNNIC/ConciseYaccLex/blob/master/lextool/lextool/Program.cs)を参照。<br>
 解釈後の実行用クラスは runtimeフォルダに集約。<br>
@@ -29,7 +29,7 @@ Program.cs       -- 第一引数のスクリプトファイルを解釈実行
 sys.cs           -- エラー、ログ出力提供（移植用）
 
 y/yengine.cs     -- ユーザに機能を提供
-y/lex.cs         -- 終末記号分解を提供
+y/lex.cs         -- 終端記号分解を提供
 y/yanalyzer.cs   -- 構文ルール解析を提供
 y/ycode.cs       -- 構文ルールで使用するAPI提供
 y/ydef_api.cs    -- 解析と利用時のAPI提供

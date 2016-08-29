@@ -85,7 +85,7 @@ namespace lextool
                 var v = get(index + i);
                 if (v==null) return false;
 
-                if (v.IsType(ts.type)) return false; //既に変換済み
+                if (i==0 && ts.list.Count==1 && v.IsType(ts.type)) return false; //既に変換済み
 
                 var o = ts.list[i];
                 if (o.GetType() == typeof(string))

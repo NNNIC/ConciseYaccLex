@@ -5,7 +5,7 @@
 Screen "hoge" 
 Layer  "main" MC { refresh(300); }
 
-#if DATE("2016/8/13") 
+#if DATE("2016/8/29") 
 
 #set @A "hoge" ("hebotton",0,2) { Hide() }
 
